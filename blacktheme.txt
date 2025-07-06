@@ -1,0 +1,44 @@
+ <div className="sticky top-0 overflow-hidden bg-black  ">
+
+      <div className=" p-10 flex justify-between items-center ">
+        <div className="">
+          <span className={`${Roboto_.className} text-white font-medium text-xl`}>
+            AXAMINE
+          </span>
+        </div>
+        <ul
+          className={`${Roboto_.className} text-white font-medium flex gap-10`}
+        >
+          <li className="cursor-pointer hover:scale-110 transition-all text-sm">Home</li>
+          <li className="cursor-pointer hover:scale-110 transition-all text-sm">ChatBot</li>
+          <li className="cursor-pointer hover:scale-110 transition-all text-sm">About Us</li>
+          <li className="cursor-pointer hover:scale-110 transition-all text-sm">Contact Us</li>
+        </ul>
+        <div className="flex items-center justify-center gap-5">
+          <div>
+            <span className={`${Roboto_.className} text-white cursor-pointer text-sm`}>
+              SignIn
+            </span>
+          </div>
+          <div>
+            <span className={`${Roboto_.className} ring-1 px-4 py-2 rounded bg-[#FFFDD0] text-black cursor-pointer text-sm` }>
+              Signup
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    </>
+
+
+
+    body
+
+
+    <div className="flex items-center justify-center h-[75vh]">
+        <h1 className={`${Baloo2.className} text-8xl w-[1200px] text-center`}>Axamine — Revolutionize diagnostics with AI-powered precision and speed</h1>
+    </div>
+
+
+
+    border-2 border-[#2c2c33]

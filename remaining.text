@@ -1,0 +1,101 @@
+
+        <div className="bg-black  ">
+          <ScrollVelocity
+            texts={[
+              '"Start Up" "Working prototype completed"',
+              '"Iterating product based on real user insights"',
+            ]}
+            velocity={velocity}
+            className="custom-scroll-text"
+          />
+        </div>
+        <div className="mt-32 flex flex-col items-center justify-center gap-16  px-4">
+          <div className="flex flex-col gap-5 w-full max-w-3xl text-center">
+            <h1
+              className={`${SpaceGrotesk.className} text-5xl md:text-6xl text-white`}
+            >
+              Try our Model
+            </h1>
+            <p className="text-gray-400 text-lg leading-relaxed">
+              Ask medical questions or upload reports—see how our AI delivers
+              real answers. Explore Axamine’s health intelligence in action.
+            </p>
+          </div>
+
+          <div className=" flex flex-wrap justify-center gap-6 w-full max-w-[1000px]">
+            {[
+              'Understands medical queries like "What is cancer?"',
+              "Accepts and analyzes patient reports",
+              "Uploads and interprets X-ray & MRI images",
+              "Summarizes complex medical data",
+              "Provides doctor-friendly diagnostics",
+            ].map((text, idx) => (
+              <div
+                key={idx}
+                className={`${SpaceGrotesk.className} modelBox  rounded-md font-bold text-white p-[1.5px] text-center hover:border-gray-700 transition-all shadow-md cursor-pointer`}
+              >
+                <p className="p-5 rounded-md  bg-black">{text}</p>
+              </div>
+            ))}
+          </div>
+          <div style={{ height: "50px", position: "relative" }}>
+            <GlareHover
+              glareColor="#ffffff"
+              glareOpacity={0.3}
+              glareAngle={-30}
+              glareSize={300}
+              transitionDuration={800}
+              playOnce={false}
+            >
+              <h2
+                className={`${SpaceGrotesk.className}`}
+                style={{
+                  fontSize: "20px",
+                  fontWeight: "900",
+                  color: "#fff",
+                  margin: 0,
+                }}
+              >
+                Try Now
+              </h2>
+            </GlareHover>
+          </div>
+        </div>
+        <div className=" mt-40">
+          <div className="w-[1000px] m-[auto] ">
+            <div className="flex flex-col gap-15 w-full  ">
+              <h1
+                className={`${SpaceGrotesk.className} text-5xl md:text-6xl text-gray-400`}
+              >
+                Why Axamine ?
+              </h1>
+
+              <div className="flex flex-col md:flex-row md:items-center  gap-10 flex-wrap w-full">
+                {Benefits.map((data, inedx) => (
+                  <div
+                    key={inedx}
+                    className=" w-[300px] h-[400px] border-2 border-[#313131b1] rounded-md flex items-center flex-col gap-10 hover:border-[#313131f7] transition-all shadow-lg cursor-pointer"
+                  >
+                    <div className="w-20 h-20 rotate-45  flex items-center justify-center bg-[#5227ff] rounded">
+                      <p
+                        className={`${SpaceGrotesk.className} rotate-[-45deg] text-2xl font-bold`}
+                      >
+                        {data.number}
+                      </p>
+                    </div>
+                    <h1 className="font-medium text-2xl">{data.title}</h1>
+                    <p
+                      className={`${Inter_.className} text-center text-[#bdbdbdae] p-2 text-md`}
+                    >
+                      {data.description}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className=" bg-black mt-20">
+          <Footer />
+        </div>
