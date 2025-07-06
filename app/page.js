@@ -1,19 +1,14 @@
-import Image from "next/image";
 import { Baloo_2 } from "next/font/google";
 import { Space_Grotesk } from "next/font/google";
 import Navbar from "./components/Navbar/Navbar";
 import { Inter } from "next/font/google";
-import GlareHover from "./components/reactBits/GlareHover/GlareHover";
-import Aurora from "./components/reactBits/Aurora/Aurora";
-import InfiniteScroll from "./components/reactBits/InfiniteScroll/InfiniteScroll";
-import ScrollVelocity from "./components/reactBits/ScrollVelocity/ScrollVelocity";
 import Benefits from "./components/Benefits/Benefits";
 import Footer from "./components/Footer/footer";
 import Hamburger from "./components/Hamburger/Hamburger";
 import BannerSection from "./components/Sections/BannerSection/BannerSection";
 import InfiniteScrollSection from "./components/Sections/InfiniteScrollSection/InfiniteScrollSection";
 import MiddelSection from "./components/Sections/MiddleSection/MiddleSection";
-// import { Hamburger } from "lucide-react";
+
 const Baloo2 = Baloo_2({
   subsets: ["latin"],
   weight: "500",
