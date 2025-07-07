@@ -9,7 +9,7 @@ import Image from "next/image";
 import { Space_Grotesk } from "next/font/google";
 const SpaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
-  weight: ["300","400","500","600","700"],
+  weight: ["300","400","500","600",""],
 });
 const HamburgerMenu = ({ closeMenu }) => {
   const {toggleMenu ,isMenuOpen } = useMenu();
